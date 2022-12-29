@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import {GrDocumentText} from 'react-icons/gr'
+import {AiFillLinkedin} from 'react-icons/ai'
 
 export default function Home() {
   return (
@@ -14,7 +11,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className='bg-white px-10'>
+        <section className="min-h-screen">
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className=' text-2xl'>&lt;/&gt;</h1>
+            <ul className='flex items-center'>
+              <li>
+                <GrDocumentText className=' cursor-pointer'></GrDocumentText></li>
+              <li>
+                <a href='#' className='bg-gradient-to-r from-cyan-500 to-blue-500 mx-5 px-4 py-2 rounded-md text-white'>Resume</a>
+              </li>
+            </ul>
+          </nav>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl p-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800'>Jingcheng Wang</h2>
+            <h3 className=' text-2xl p-2'>Software Engineer</h3>
+            <p className='text-md pt-5'>Hi there, I am a full stack software engineer who is currently working at <a href="https://eresearch.unimelb.edu.au/" target="_blank" className="text-blue-700" rel="noreferrer">Melbourne eResearch Group</a> within the University of Melbourne. </p>
+          </div>
+          <div className='text-5xl flex justify-center'>
+            <a href="https://www.linkedin.com/in/jingcheng-wang-958240123/" target="_blank" rel="noreferrer"><AiFillLinkedin></AiFillLinkedin></a>
+          </div>
+
+
+        </section>
       </main>
     </>
   )
