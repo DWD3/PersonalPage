@@ -9,8 +9,8 @@ export default function MainIntro(){
         <h2 className="text-5xl p-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800">
           Jingcheng Wang (Jin)
         </h2>
-        <h3 className=" text-3xl p-2">Software Engineer</h3>
-        <div className="text-xl pt-5">
+        <h3 className=" text-3xl py-6">Software Engineer</h3>
+        <div className="text-xl">
           <p>
             Hi there, I am a full stack software engineer who is currently
             working at{" "}
