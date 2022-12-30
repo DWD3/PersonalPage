@@ -15,13 +15,20 @@ export default function SkillCard(props : Props){
         })
     }
 
-    return <>
-            <div className="text-center shadow-lg p-10 rounded-xl m-10 min-w-[20vw]">
-            <div className='flex justify-center'>
-             <Image className="my-5" width={120} height={120} src={props.imageData} alt="No image"></Image>
-            </div>
-            <h1 className="text-xl py-2">{props.title}</h1>
-            {generateItems()}
+    return (
+      <>
+        <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="flex justify-center">
+            <Image
+              className="my-5"
+              height={180}
+              src={props.imageData}
+              alt="No image"
+            ></Image>
+          </div>
+          <h1 className="text-xl py-2 font-semibold">{props.title}</h1>
+          {generateItems()}
         </div>
-    </>
+      </>
+    );
 }
