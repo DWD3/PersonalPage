@@ -10,7 +10,7 @@ export default function SkillCard(props : Props){
     function generateItems(){
         return props.items.map(item=>{
             return <>
-                <h3 className='py-1'>{item}</h3>
+                <h3 className='py-1' key={item}>{item}</h3>
             </>
         })
     }
