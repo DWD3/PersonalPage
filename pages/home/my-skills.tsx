@@ -8,7 +8,7 @@ import cloudIconImage from '../../public/cloud-icon.png'
 
 export default function MySkills(){
     return (
-      <>
+      <div className='mx-5 lg:mx-0'>
         <div>
           <h3 className="text-3xl mt-20">My skills</h3>
           <p className="text-lg p-5">
@@ -42,6 +42,6 @@ export default function MySkills(){
             items={["Unity3D","OpenCV","GAN Machine Learning"]}
           />
         </div>
-      </>
+      </div>
     );
 }

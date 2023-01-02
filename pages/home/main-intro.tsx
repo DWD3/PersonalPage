@@ -6,7 +6,7 @@ export default function MainIntro(){
   return (
     <>
       <div className="text-center p-10">
-        <h2 className="text-5xl p-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800">
+        <h2 className="text-5xl py-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-800">
           Jingcheng Wang (Jin)
         </h2>
         <h3 className=" text-3xl py-6">Software Engineer</h3>

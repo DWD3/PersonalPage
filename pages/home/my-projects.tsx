@@ -2,7 +2,7 @@ import ProjectCard from "../../components/project-card";
 
 export default function MyProjects(){
     return (
-      <>
+      <div className="mx-5 lg:mx-0">
         <div>
           <h3 className="text-3xl mt-20">My Projects</h3>
           <p className="text-lg p-5">These are my past and current projects.</p>
@@ -19,6 +19,6 @@ export default function MyProjects(){
             <ProjectCard title="Data Mining On Google Map Imagery" description="TODO description" />
           </div>
         </div>
-      </>
+      </div>
     );
 }
