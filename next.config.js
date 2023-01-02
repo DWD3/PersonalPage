@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 
+
+/**
+ * Redirections
+ */
 const redirectingConfig = {
   async redirects(){
     return [
@@ -12,8 +16,12 @@ const redirectingConfig = {
   }
 }
 
+/**
+ * Overall config
+ */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone', // for building docker image
   ...redirectingConfig
 }
 
