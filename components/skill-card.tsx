@@ -9,9 +9,7 @@ type Props = {
 export default function SkillCard(props : Props){
     function generateItems(){
         return props.items.map(item=>{
-            return <>
-                <h3 className='py-1' key={item}>{item}</h3>
-            </>
+            return <h3 className='py-1' key={item}>{item}</h3>
         })
     }
 
