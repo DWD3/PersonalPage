@@ -23,7 +23,7 @@ export default function AboutWebsite(){
           </p>
           <p className="text-lg p-5">
             It is the currently hosted on Google Cloud Platform <FcGoogle className="inline"/>. The App itself is containerized using Docker and currently running on
-            Google's <span className="font-semibold">Cloud Run</span> service. CI/CD has been set up using Google's
+            Google&#39;s <span className="font-semibold">Cloud Run</span> service. CI/CD has been set up using Google&#39;s
             Cloud Build so that every merge into the main branch of the Github
             Repo will automatically update this website.
           </p>
