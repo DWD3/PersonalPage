@@ -1,4 +1,5 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import ClickableLink from "../../components/clickable-link";
 import SocialLink from "../../components/social-link";
 
 
@@ -14,25 +15,17 @@ export default function MainIntro(){
           <p>
             Hi there, I am a full stack software engineer who is currently
             working at{" "}
-            <a
-              href="https://eresearch.unimelb.edu.au/"
-              target="_blank"
-              className="text-blue-700"
-              rel="noreferrer"
-            >
-              Melbourne eResearch Group (MeG)
-            </a>{" "}
+            <ClickableLink
+              link="https://eresearch.unimelb.edu.au/"
+              text="Melbourne eResearch Group (MeG)"
+            />{" "}
             within the University of Melbourne. At MeG, I am currently working
             across the stack on a sophisticated workforce planning simulation
             software called{" "}
-            <a
-              target="_blank"
-              className="text-blue-700"
-              rel="noreferrer"
-              href="https://www.dst.defence.gov.au/research-facility/next-generation-workforce-planning-capability/current-projects"
-            >
-              Athena Lite
-            </a>{" "}
+            <ClickableLink
+              link="https://www.dst.defence.gov.au/research-facility/next-generation-workforce-planning-capability/current-projects"
+              text="Athena Lite"
+            />{" "}
             for the Australian Defence Force.
           </p>
           <br />
@@ -42,32 +35,20 @@ export default function MainIntro(){
             <span className="font-semibold">Software Development</span> and{" "}
             <span className="font-semibold">Data Analysis</span> roles,
             including :{" "}
-            <a
-              href="https://cis.unimelb.edu.au/hci"
-              target="_blank"
-              className="text-blue-700"
-              rel="noreferrer"
-            >
-              HCI Group
-            </a>
+            <ClickableLink
+              link="https://cis.unimelb.edu.au/hci"
+              text="HCI Group"
+            />
             ,{" "}
-            <a
-              href="https://psychologicalsciences.unimelb.edu.au/chdh"
-              target="_blank"
-              className="text-blue-700"
-              rel="noreferrer"
-            >
-              Complex Human Data Hub
-            </a>
+            <ClickableLink
+              link="https://psychologicalsciences.unimelb.edu.au/chdh"
+              text="Complex Human Data Hub"
+            />
             , and{" "}
-            <a
-              href="https://thud.msd.unimelb.edu.au/"
-              target="_blank"
-              className="text-blue-700"
-              rel="noreferrer"
-            >
-              THUD Lab
-            </a>
+            <ClickableLink
+              link="https://thud.msd.unimelb.edu.au/"
+              text="THUD Lab"
+            />
             .
           </p>
           <br />
