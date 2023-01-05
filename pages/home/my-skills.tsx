@@ -29,7 +29,7 @@ export default function MySkills(){
           <SkillCard
             imageData={cloudIconImage}
             title={"Cloud And DevOps"}
-            items={["AWS","GCP","Auzre DevOps","Docker"]}
+            items={["AWS","GCP","Azure DevOps","Docker"]}
           />
           <SkillCard
             imageData={gitIconImage}
@@ -39,7 +39,7 @@ export default function MySkills(){
           <SkillCard
             imageData={otherIconImage}
             title={"Others"}
-            items={["Unity3D","OpenCV","GAN Machine Learning"]}
+            items={["Unity3D","OpenCV","Image Processing"]}
           />
         </div>
       </div>
