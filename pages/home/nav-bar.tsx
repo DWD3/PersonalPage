@@ -1,10 +1,17 @@
 import { GrDocumentText } from "react-icons/gr";
+import ReactDOMServer from 'react-dom/server'
 
 export default function NavBar(){
+
+
+  const tooltip = ReactDOMServer.renderToString(<div>
+    <h1>Hello</h1>
+  </div>)
+
   return (
     <>
       <nav className="py-10 mb-12 flex justify-between">
-        <h1 className=" text-2xl">&lt;/&gt;</h1>
+        <h1 className=" text-2xl" data-bs-toggle="tooltip" data-bs-html="true" title="test tooltip">&lt;/&gt;</h1>
         <ul className="flex items-center">
           <li>
             <GrDocumentText className=""></GrDocumentText>
