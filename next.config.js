@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+const { version } = require('./package.json');
 
 
 /**
@@ -21,6 +22,9 @@ const redirectingConfig = {
  */
 const nextConfig = {
   reactStrictMode: true,
+  publicRuntimeConfig: { // for displaying App version number
+    version,
+  },
   output: 'standalone', // for building docker image
   ...redirectingConfig
 }
