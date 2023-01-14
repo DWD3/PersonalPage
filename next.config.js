@@ -1,34 +1,32 @@
 /** @type {import('next').NextConfig} */
-const { version } = require('./package.json');
-
+const { version } = require("./package.json");
 
 /**
  * Redirections
  */
 const redirectingConfig = {
-  async redirects(){
+  async redirects() {
     return [
-        {
-          source : '/',
-          destination : '/home',
-          permanent: true
-        }
-    ]
-  }
-}
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
+  },
+};
 
 /**
  * Overall config
  */
 const nextConfig = {
   reactStrictMode: true,
-  publicRuntimeConfig: { // for displaying App version number
+  publicRuntimeConfig: {
+    // for displaying App version number
     version,
   },
-  output: 'standalone', // for building docker image
-  ...redirectingConfig
-}
+  output: "standalone", // for building docker image
+  ...redirectingConfig,
+};
 
-
-
-module.exports = nextConfig
+module.exports = nextConfig;
