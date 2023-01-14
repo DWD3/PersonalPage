@@ -1,6 +1,6 @@
 {
   "name": "personal_page",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,7 +26,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.6.0",
     "postcss": "^8.4.20",
+    "prettier": "2.8.3",
     "tailwindcss": "^3.2.4"
   }
 }

@@ -2,8 +2,7 @@ import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import ClickableLink from "../../components/clickable-link";
 import SocialLink from "../../components/social-link";
 
-
-export default function MainIntro(){
+export default function MainIntro() {
   return (
     <>
       <div className="text-center p-10">

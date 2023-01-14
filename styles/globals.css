@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -30,4 +28,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
