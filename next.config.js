@@ -7,11 +7,7 @@ const { version } = require("./package.json");
 const redirectingConfig = {
   async redirects() {
     return [
-      {
-        source: "/",
-        destination: "/home",
-        permanent: true,
-      },
+      // currently no redirection
     ];
   },
 };

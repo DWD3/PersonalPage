@@ -1,9 +1,9 @@
-import SkillCard from "../../components/skill-card";
-import reactIconImage from "../../public/react-icon.png";
-import backendIconImage from "../../public/backend-icon.png";
-import gitIconImage from "../../public/git-icon.png";
-import otherIconImage from "../../public/other-icon.png";
-import cloudIconImage from "../../public/cloud-icon.png";
+import SkillCard from "components/skill-card";
+import reactIconImage from "public/react-icon.png";
+import backendIconImage from "public/backend-icon.png";
+import gitIconImage from "public/git-icon.png";
+import otherIconImage from "public/other-icon.png";
+import cloudIconImage from "public/cloud-icon.png";
 
 export default function MySkills() {
   return (

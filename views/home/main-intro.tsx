@@ -1,6 +1,6 @@
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import ClickableLink from "../../components/clickable-link";
-import SocialLink from "../../components/social-link";
+import ClickableLink from "components/clickable-link";
+import SocialLink from "components/social-link";
 
 export default function MainIntro() {
   return (

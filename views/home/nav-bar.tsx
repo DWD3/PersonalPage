@@ -1,6 +1,6 @@
-import { GrDocumentText } from "react-icons/gr";
 import { Tooltip } from "flowbite-react";
 import getConfig from "next/config";
+import Link from "next/link";
 
 export default function NavBar() {
   const { publicRuntimeConfig } = getConfig();
@@ -8,7 +8,7 @@ export default function NavBar() {
   const toolTipContent = (
     <div>
       <p>Version: {publicRuntimeConfig.version}</p>
-      <p>Last Updated: 06/01/2023</p> {/* TODO remove the hard code */}
+      <p>Last Updated: 21/01/2023</p> {/* TODO remove the hard code */}
       <p>Deployed On: Google Cloud Platform asia-southeast1 (Singapore)</p>{" "}
       {/* TODO remove the hard code */}
     </div>
@@ -22,15 +22,12 @@ export default function NavBar() {
 
         <ul className="flex items-center">
           <li>
-            <GrDocumentText className=""></GrDocumentText>
-          </li>
-          <li>
-            <a
-              href="#"
+            <Link
+              href="/blog"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 mx-5 px-2 lg:px-4 py-2 rounded-md text-white"
             >
-              Resume(TODO)
-            </a>
+              Blog
+            </Link>
           </li>
         </ul>
       </nav>
