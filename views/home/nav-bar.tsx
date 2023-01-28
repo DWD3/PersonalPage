@@ -1,6 +1,7 @@
 import { Tooltip } from "flowbite-react";
 import getConfig from "next/config";
 import Link from "next/link";
+import { getDeploymentRegion } from "utils/runtime-variables";
 
 export default function NavBar() {
   const { publicRuntimeConfig } = getConfig();
@@ -9,7 +10,7 @@ export default function NavBar() {
     <div>
       <p>Version: {publicRuntimeConfig.version}</p>
       <p>Last Updated: 28/01/2023</p> {/* TODO remove the hard code */}
-      <p>Deployed On: Google Cloud Platform asia-southeast1 (Singapore)</p>{" "}
+      <p>Deployed On: Google Cloud Platform {getDeploymentRegion()}</p>{" "}
       {/* TODO remove the hard code */}
     </div>
   );
