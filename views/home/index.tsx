@@ -4,6 +4,7 @@ import MainIntro from "./main-intro";
 import MySkills from "./my-skills";
 import MyProjects from "./my-projects";
 import AboutWebsite from "./about-website";
+import Footer from "./footer";
 
 export function Home() {
   return (
@@ -14,6 +15,7 @@ export function Home() {
         <MySkills />
         <MyProjects />
         <AboutWebsite />
+        <Footer />
       </main>
     </>
   );

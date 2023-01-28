@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 type Props = {
   link: string;
   text: string;
