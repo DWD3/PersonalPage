@@ -1,5 +1,7 @@
-import _ from 'lodash';
+import _ from "lodash";
 
-export function getDeploymentRegion(){
-    return  _.get(process.env,"$_DEPLOY_REGION","Singapore");
+export function getDeploymentRegion() {
+  return (
+    process.env.$_DEPLOY_REGION || process.env._DEPLOY_REGION || "Singapore"
+  );
 }
