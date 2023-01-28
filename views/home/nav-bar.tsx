@@ -8,7 +8,7 @@ export default function NavBar() {
   const toolTipContent = (
     <div>
       <p>Version: {publicRuntimeConfig.version}</p>
-      <p>Last Updated: 21/01/2023</p> {/* TODO remove the hard code */}
+      <p>Last Updated: 28/01/2023</p> {/* TODO remove the hard code */}
       <p>Deployed On: Google Cloud Platform asia-southeast1 (Singapore)</p>{" "}
       {/* TODO remove the hard code */}
     </div>
@@ -17,7 +17,12 @@ export default function NavBar() {
     <>
       <nav className="py-10 mb-12 flex justify-between">
         <Tooltip content={toolTipContent} placement="right">
-          <h1 className=" text-2xl">&lt;/&gt;</h1>
+          <Link
+            href="https://github.com/DWD3/PersonalPage"
+            className=" text-2xl"
+          >
+            &lt;/&gt;
+          </Link>
         </Tooltip>
 
         <ul className="flex items-center">
