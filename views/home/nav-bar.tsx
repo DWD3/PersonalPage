@@ -1,16 +1,20 @@
 import { Tooltip } from "flowbite-react";
 import getConfig from "next/config";
 import Link from "next/link";
-import { getDeploymentRegion } from "utils/runtime-variables";
+import useSWR from "swr";
 
 export default function NavBar() {
+  //TODO make this fetcher generic
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
+  //TODO make a separate layer for data fetching
+  const { data } = useSWR("/api/env", fetcher);
   const { publicRuntimeConfig } = getConfig();
 
   const toolTipContent = (
     <div>
       <p>Version: {publicRuntimeConfig.version}</p>
       <p>Last Updated: 28/01/2023</p> {/* TODO remove the hard code */}
-      <p>Deployed On: Google Cloud Platform {getDeploymentRegion()}</p>{" "}
+      <p>Deployed On: Google Cloud Platform In {data?.region}</p>{" "}
       {/* TODO remove the hard code */}
     </div>
   );
