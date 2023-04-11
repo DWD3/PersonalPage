@@ -19,7 +19,7 @@ export default function SkillCard(props: Props) {
 
   return (
     <>
-      <div className="text-center shadow-lg p-10 rounded-xl my-10">
+      <div className="text-center p-10 rounded-xl my-10 shadow-lg">
         <div className="flex justify-center">
           <Image
             className="my-5"
