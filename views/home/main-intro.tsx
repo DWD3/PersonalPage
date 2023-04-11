@@ -12,8 +12,8 @@ export default function MainIntro() {
         <h3 className=" text-3xl py-6">Software Engineer</h3>
         <div className="text-xl">
           <p>
-            Hi there, I am a full stack software engineer who is currently
-            working at{" "}
+            Hi, welcome to my page! I am a full stack software engineer who is
+            currently working at{" "}
             <ClickableLink
               link="https://eresearch.unimelb.edu.au/"
               text="Melbourne eResearch Group (MeG)"

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import NavBar from "./nav-bar";
 import MainIntro from "./main-intro";
 import MySkills from "./my-skills";
