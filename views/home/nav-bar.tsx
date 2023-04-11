@@ -13,7 +13,7 @@ export default function NavBar() {
   const toolTipContent = (
     <div>
       <p>Version: {publicRuntimeConfig.version}</p>
-      <p>Last Updated: 28/01/2023</p> {/* TODO remove the hard code */}
+      <p>Last Updated: 11/04/2023</p> {/* TODO remove the hard code */}
       <p>Deployed On: Google Cloud Platform In {data?.region}</p>{" "}
       {/* TODO remove the hard code */}
     </div>
