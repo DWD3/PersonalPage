@@ -1,9 +1,4 @@
 import SkillCard from "components/skill-card";
-import reactIconImage from "public/react-icon.png";
-import backendIconImage from "public/backend-icon.png";
-import gitIconImage from "public/git-icon.png";
-import otherIconImage from "public/other-icon.png";
-import cloudIconImage from "public/cloud-icon.png";
 
 export default function MySkills() {
   return (
@@ -16,7 +11,7 @@ export default function MySkills() {
       </div>
       <div className="lg:flex justify-center gap-28">
         <SkillCard
-          imageData={reactIconImage}
+          imageData="/react-icon.png"
           title={"Frontend"}
           items={[
             "React (Redux, Next.js)",
@@ -26,7 +21,7 @@ export default function MySkills() {
           ]}
         />
         <SkillCard
-          imageData={backendIconImage}
+          imageData="/backend-icon.png"
           title={"Backend"}
           items={[
             "Java(Spring,JUnit)",
@@ -37,17 +32,17 @@ export default function MySkills() {
           ]}
         />
         <SkillCard
-          imageData={cloudIconImage}
+          imageData="/cloud-icon.png"
           title={"Cloud And DevOps"}
           items={["AWS", "GCP", "Azure DevOps", "Docker"]}
         />
         <SkillCard
-          imageData={gitIconImage}
+          imageData="/git-icon.png"
           title={"Productivity"}
           items={["Git", "Jira", "VS Code", "IntelliJ / PyCharm"]}
         />
         <SkillCard
-          imageData={otherIconImage}
+          imageData="/other-icon.png"
           title={"Others"}
           items={["Unity3D", "OpenCV", "Image Processing"]}
         />

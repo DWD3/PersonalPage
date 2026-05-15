@@ -1,5 +1,4 @@
 import { Tooltip } from "flowbite-react";
-import getConfig from "next/config";
 import Link from "next/link";
 import useSWR from "swr";
 
@@ -8,11 +7,11 @@ export default function NavBar() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   //TODO make a separate layer for data fetching
   const { data } = useSWR("/api/env", fetcher);
-  const { publicRuntimeConfig } = getConfig();
+  const appVersion = process.env.NEXT_PUBLIC_APP_VERSION;
 
   const toolTipContent = (
     <div>
-      <p>Version: {publicRuntimeConfig.version}</p>
+      <p>Version: {appVersion}</p>
       <p>Last Updated: 11/04/2023</p> {/* TODO remove the hard code */}
       <p>Deployed On: Google Cloud Platform In {data?.region}</p>{" "}
       {/* TODO remove the hard code */}
