@@ -17,9 +17,9 @@ const redirectingConfig = {
  */
 const nextConfig = {
   reactStrictMode: true,
-  publicRuntimeConfig: {
+  env: {
     // for displaying App version number
-    version,
+    NEXT_PUBLIC_APP_VERSION: version,
   },
   output: "standalone", // for building docker image
   ...redirectingConfig,

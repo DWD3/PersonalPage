@@ -24,6 +24,7 @@ export default function SkillCard(props: Props) {
           <Image
             className="my-5"
             height={180}
+            width={180}
             src={props.imageData}
             alt="No image"
           ></Image>
